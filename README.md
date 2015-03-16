@@ -7,6 +7,7 @@
 ```console
 $ git clone git@github.com:bloodyowl/react-boilerplate.git
 $ cd react-boilerplate
+$ npm install
 ```
 
 ## dev mode
