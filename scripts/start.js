@@ -22,6 +22,7 @@ const devConfig = {
   watch : true,
   colors: true,
   progress : true,
+  devtool : '#eval-source-map',
   entry : {
     ...Object.keys(config.entry).reduce((acc, key) => {
       acc[key] = devEntry.concat(config.entry[key])
@@ -68,4 +69,3 @@ const devServer = new WebpackDevServer(
 devServer.listen(SERVER_PORT, SERVER_HOST, () => {
   opn(`${ SERVER_PROTOCOL }${ SERVER_HOST }:${ SERVER_PORT }`)
 })
-
