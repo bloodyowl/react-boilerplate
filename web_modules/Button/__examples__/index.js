@@ -18,7 +18,7 @@ export default class extends Component {
           Primary button
         </Button>
         <h2>Primary disabled button</h2>
-        <Button modifier="primaryDisabled">
+        <Button modifier="primary" disabled={true}>
           Primary disabled button
         </Button>
       </div>
