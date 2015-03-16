@@ -6,10 +6,10 @@
   "scripts": {
     "afterpull": "npm i && npm prune",
     "postinstall": "cd node_modules/react-router && npm run build-npm && cd ../..",
-    "start": "node ./scripts/start-entry",
-    "prebuild": "node ./scripts/clean",
-    "build": "node ./scripts/build-entry",
-    "build-prod" : "node ./scripts/build-entry --minify",
+    "start": "babel-node -r -g ./scripts/start",
+    "prebuild": "babel-node -r -g ./scripts/clean",
+    "build": "babel-node -r -g ./scripts/build",
+    "build-prod" : "babel-node -r -g ./scripts/build --minify",
     "test": "npm run build && testem"
   },
   "repository": {
