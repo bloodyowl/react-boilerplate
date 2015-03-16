@@ -1,0 +1,11 @@
+.docs-Home {
+  padding: 2rem;
+}
+
+  .docs-Home blockquote,
+  .docs-Home pre {
+    background: #fafafa;
+    padding: .5rem;
+    padding-left: 2rem;
+    margin: 0;
+  }

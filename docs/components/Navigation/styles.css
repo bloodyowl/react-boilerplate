@@ -1,0 +1,17 @@
+.docs-Navigation {}
+
+  .docs-Navigation-group {
+    padding: .5rem 0;
+  }
+
+  .docs-Navigation-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: #444;
+    font-weight: 300;
+  }
+
+    .docs-Navigation-link strong {
+      font-weight: 700;
+    }
+
