@@ -9,6 +9,7 @@
     "start": "node ./scripts/start-entry",
     "prebuild": "node ./scripts/clean",
     "build": "node ./scripts/build-entry",
+    "build-prod" : "node ./scripts/build-entry --minify",
     "test": "npm run build && testem"
   },
   "repository": {
