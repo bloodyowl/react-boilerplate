@@ -1,0 +1,24 @@
+{
+  "name": "react-boilerplate",
+  "version": "1.0.0",
+  "description": "boilerplate for a react project",
+  "main": "./scripts/start.js",
+  "scripts": {
+    "test": "npm run build && ./scripts/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bloodyowl/react-boilerplate.git"
+  },
+  "keywords": [
+    "react",
+    "boilerplate",
+    "webpack"
+  ],
+  "author": "bloodyowl",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bloodyowl/react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/bloodyowl/react-boilerplate"
+}
