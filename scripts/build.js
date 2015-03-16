@@ -23,7 +23,7 @@ const buildConfig = {
     }),
     new AppCachePlugin({
       cache : ["*"],
-      network : null,
+      network : [],
     }),
   ]).concat(
     shouldMinify ?
