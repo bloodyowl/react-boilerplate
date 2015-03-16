@@ -4,7 +4,12 @@
   "description": "boilerplate for a react project",
   "main": "./scripts/start.js",
   "scripts": {
-    "test": "npm run build && ./scripts/test.js"
+    "afterpull": "npm i && npm prune",
+    "postinstall": "cd node_modules/react-router && npm run build-npm && cd ../..",
+    "start": "node ./scripts/start-entry",
+    "prebuild": "node ./scripts/clean",
+    "build": "node ./scripts/build-entry",
+    "test": "npm run build && testem"
   },
   "repository": {
     "type": "git",
@@ -20,5 +25,37 @@
   "bugs": {
     "url": "https://github.com/bloodyowl/react-boilerplate/issues"
   },
-  "homepage": "https://github.com/bloodyowl/react-boilerplate"
+  "homepage": "https://github.com/bloodyowl/react-boilerplate",
+  "devDependencies": {
+    "appcache-webpack-plugin": "^0.1.1",
+    "babel": "^4.7.12",
+    "babel-core": "^4.7.12",
+    "babel-loader": "^4.2.0",
+    "babel-runtime": "^4.7.12",
+    "css-loader": "^0.9.1",
+    "cssnext-loader": "^1.0.1",
+    "file-loader": "^0.8.1",
+    "opn": "^1.0.1",
+    "raw-loader": "^0.5.1",
+    "react-hot-loader": "^1.2.3",
+    "rimraf": "^2.3.2",
+    "style-loader": "^0.8.3",
+    "svgo": "^0.5.0",
+    "svgo-loader": "^1.1.0",
+    "tape": "^3.5.0",
+    "testem": "^0.7.5",
+    "webpack": "^1.7.3",
+    "webpack-dev-server": "^1.7.0"
+  },
+  "dependencies": {
+    "cssrecipes-custom-media-queries": "^0.3.0",
+    "cssrecipes-defaults": "^0.5.0",
+    "cssrecipes-grid": "^0.4.0",
+    "cssrecipes-reset": "^0.5.0",
+    "cssrecipes-utils": "^0.5.0",
+    "normalize.css": "^3.0.2",
+    "react": "^0.13.0",
+    "react-router": "git@github.com:rackt/react-router#0.13-compat",
+    "whatwg-fetch": "^0.7.0"
+  }
 }

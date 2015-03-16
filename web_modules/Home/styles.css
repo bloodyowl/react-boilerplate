@@ -1,0 +1,10 @@
+.Home {}
+
+  .Home-title {
+    margin: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 300;
+    background: #fafafa;
+    text-align: center;
+  }

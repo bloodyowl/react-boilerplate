@@ -1,0 +1,12 @@
+framework: tap
+
+src_files:
+  - "web_modules/**/*"
+  - "src/**/*"
+serve_files: dist/tests.js
+
+launch_in_dev:
+  - firefox
+
+launch_in_ci:
+  - chrome
