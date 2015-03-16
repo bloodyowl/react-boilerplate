@@ -1,0 +1,13 @@
+.Button {
+  padding: 1rem;
+  font-family: Avenir;
+  border-radius: .25rem;
+}
+
+  .Button--default {
+    background: #ccc;
+  }
+
+  .Button--primary {
+    background: #56a;
+  }

@@ -12,6 +12,9 @@ const config = {
     tests : [
       "./webpack.tests.js",
     ],
+    docs : [
+      "./docs/docs.js",
+    ],
   },
   output : {
     path : path.resolve(__dirname, "dist"),
