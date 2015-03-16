@@ -9,6 +9,7 @@ import {version} from "../package.json"
 
 const buildConfig = {
   ...config,
+  devtool : '#source-map',
   output : {
     ...config.output,
     ...shouldMinify && {
