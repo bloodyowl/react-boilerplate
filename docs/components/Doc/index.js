@@ -1,4 +1,4 @@
-import React, {Component} from "react/addons"
+import React, {Component} from "react"
 
 class Doc extends Component {
 
@@ -17,7 +17,7 @@ class Doc extends Component {
   render() {
     return (
       <div>
-        {React.addons.createFragment(this.mapComponent())}
+        {this.mapComponent()}
       </div>
     )
   }
