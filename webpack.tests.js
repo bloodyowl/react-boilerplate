@@ -1,7 +1,8 @@
-[
+const reqPaths = [
   "./web_modules",
   "./src",
-].forEach(path => {
+]
+reqPaths.forEach(path => {
   const req = require.context(
     path,
     true,
