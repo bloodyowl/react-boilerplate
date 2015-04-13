@@ -2,15 +2,11 @@ import path from "path"
 import webpack from "webpack"
 
 import styleVariables from "./src/styleVariables"
-import toCSSVariables from "./src/utils/toCSSVariables"
 
 const config = {
   entry : {
     index : [
       "./src/index.js",
-    ],
-    tests : [
-      "./webpack.tests.js",
     ],
     docs : [
       "./docs/docs.js",
@@ -32,7 +28,9 @@ const config = {
       {
         test : /\.js$/,
         loaders : [
-          "babel?experimental&playground",
+          "babel?" + JSON.stringify({
+            stage: 0,
+          }),
         ],
         exclude : /node_modules/,
       },
@@ -69,7 +67,7 @@ const config = {
     compress : true,
     features : {
       customProperties : {
-        variables : toCSSVariables(styleVariables),
+        variables : styleVariables,
       }
     }
   },

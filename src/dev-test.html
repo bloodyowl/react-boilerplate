@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Tests</title>
+<h1>TAP</h1>
+<pre id="test-Pre"></pre>
+<script>
+  void function() {
+    if(!window.tape) {
+      var log = console.log
+      var target = document.getElementById("test-Pre")
+      window.console.log = function(message) {
+        target.appendChild(document.createTextNode(message + "\n"))
+        log.apply(console, arguments)
+      }
+      document.write("<" + "script src=\"/tests.js\"></"+ "script>")
+    }
+  }()
+</script>
+

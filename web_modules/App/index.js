@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from "react"
+import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
@@ -14,19 +15,13 @@ class App extends Component {
     RouteHandler : PropTypes.func,
   }
 
+  static styles = styles
+
   getChildContext() {
     return {
       styleVariables : this.props.styleVariables,
       RouteHandler : this.props.RouteHandler,
     }
-  }
-
-  componentWillMount() {
-    styles.use()
-  }
-
-  componentWillUnmount() {
-    styles.unuse()
   }
 
   render() {
@@ -38,4 +33,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default styled(App)

@@ -1,16 +1,11 @@
 import React, {Component} from "react"
+import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
 class Home extends Component {
 
-  componentDidMount() {
-    styles.use()
-  }
-
-  componentWillUnmount() {
-    styles.unuse()
-  }
+  static styles = styles
 
   render() {
     return (
@@ -25,4 +20,4 @@ class Home extends Component {
   }
 }
 
-export default Home
+export default styled(Home)

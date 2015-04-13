@@ -1,4 +1,3 @@
-import tape from "tape"
 import React, {Component, PropTypes} from "react/addons"
 const TestUtils = React.addons.TestUtils
 

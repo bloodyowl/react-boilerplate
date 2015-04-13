@@ -1,4 +1,5 @@
 import React, {Component, PropTypes} from "react"
+import styled from "bloody-react-styled"
 import cx from "classnames"
 
 import styles from "./styles"
@@ -14,13 +15,7 @@ class Button extends Component {
     modifier : PropTypes.string,
   }
 
-  componentWillMount() {
-    styles.use()
-  }
-
-  componentWillUnmount() {
-    styles.unuse()
-  }
+  static styles = styles
 
   render() {
     const classes = cx(
@@ -38,4 +33,4 @@ class Button extends Component {
 
 }
 
-export default Button
+export default styled(Button)
