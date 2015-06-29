@@ -1,20 +1,14 @@
 import React, {Component, PropTypes} from "react"
 import {Link} from "react-router"
+import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
+@styled(styles)
 class Navigation extends Component {
 
   static propTypes = {
     list : PropTypes.object,
-  }
-
-  componentWillMount() {
-    styles.use()
-  }
-
-  componentWillUnmount() {
-    styles.unuse()
   }
 
   render() {

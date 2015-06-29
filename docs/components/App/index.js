@@ -1,11 +1,13 @@
 import React, {Component, PropTypes} from "react"
 import {RouteHandler} from "react-router"
+import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
 import Navigation from "../Navigation"
 import Header from "../Header"
 
+@styled(styles)
 class App extends Component {
 
   static propTypes = {
@@ -16,14 +18,6 @@ class App extends Component {
     return {
       navigation : data,
     }
-  }
-
-  componentWillMount() {
-    styles.use()
-  }
-
-  componentWillUnmount() {
-    styles.unuse()
   }
 
   render() {
