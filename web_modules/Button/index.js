@@ -4,6 +4,7 @@ import cx from "classnames"
 
 import styles from "./styles"
 
+@styled(styles)
 class Button extends Component {
 
   static defaultProps = {
@@ -14,8 +15,6 @@ class Button extends Component {
     className : PropTypes.string,
     modifier : PropTypes.string,
   }
-
-  static styles = styles
 
   render() {
     const classes = cx(
@@ -33,4 +32,4 @@ class Button extends Component {
 
 }
 
-export default styled(Button)
+export default Button

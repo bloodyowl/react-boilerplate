@@ -1,18 +1,11 @@
 import React, {Component} from "react"
 import {Link} from "react-router"
+import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
+@styled(styles)
 class Header extends Component {
-
-  componentWillMount() {
-    styles.use()
-  }
-
-  componentWillUnmount() {
-    styles.unuse()
-  }
-
   render() {
     return (
       <header className="docs-Header">

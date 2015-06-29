@@ -3,10 +3,8 @@ import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
+@styled(styles)
 class Home extends Component {
-
-  static styles = styles
-
   render() {
     return (
       <div className="Home">
@@ -20,4 +18,4 @@ class Home extends Component {
   }
 }
 
-export default styled(Home)
+export default Home

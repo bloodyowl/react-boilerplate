@@ -3,6 +3,7 @@ import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
+@styled(styles)
 class App extends Component {
 
   static childContextTypes = {
@@ -14,8 +15,6 @@ class App extends Component {
     styleVariables : PropTypes.object,
     RouteHandler : PropTypes.func,
   }
-
-  static styles = styles
 
   getChildContext() {
     return {
@@ -33,4 +32,4 @@ class App extends Component {
   }
 }
 
-export default styled(App)
+export default App

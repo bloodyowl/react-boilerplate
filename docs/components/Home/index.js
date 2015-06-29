@@ -1,18 +1,11 @@
 import React, {Component} from "react"
 import README from "raw!markdown!../../../README.md"
+import styled from "bloody-react-styled"
 
 import styles from "./styles"
 
+@styled(styles)
 class Home extends Component {
-
-  componentWillMount() {
-    styles.use()
-  }
-
-  componentWillUnmount() {
-    styles.unuse()
-  }
-
   render() {
     return (
       <div className="docs-Home" dangerouslySetInnerHTML={{
